@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login View</title>
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+        <div class="container">
+            <img class="login-image" src="img/image 1.png" alt="Login Background Image">
+            <section class="login-form">
+
+                <form>
+                    <p>Welcome back</p>
+                    <h1>Login to your account</h1>
+                    <ul>
+                        <li class="email-details">
+                            <label for="email">Email</label></br>
+                            <input type="email" id="email" name="user-email" placeholder="John.snow@gmail.com" required /><br>
+                            <p class="error-msg-email">Invalid email</p>
+                            <p class="reqd-msg-email">Please enter your email</p>
+                        </li>
+                        <li class="pwd-details">
+                            <label for="password">Password</label></br>
+                            <input type="password" id="password" name="user-pwd" placeholder="*********" 
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                            title="Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+                            <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  -->
+                            <p class="error-msg-pwd">Incorrect password</p>
+                            <p class="reqd-msg-pwd">Please enter your password</p>
+                        </li>
+                        <li class="features">
+                            <section>
+                                <input type="checkbox" class="checkbox" id="remember-me" name="remember-me"/>
+                                <label for="remember-me">Remember me</label>
+                            </section>                            
+                            <a href="" class="forgot-pwd" id="forgot-pwd">Forgot password?</a>
+                        </li>
+                        <button id="login-now">Login now</button></br>
+                        <button id="google-login" type="button"><img src="img/googlelogo.png" class="google-logo" alt="google logo">   Or sign-in with google</button>
+                        <!-- <p class="successfull">Successful login</p> -->
+                    </ul>
+                </form>
+
+                <p id="sign-up">Dont have an account? <a href="">Join free today</a></p>
+            </section>
+        </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

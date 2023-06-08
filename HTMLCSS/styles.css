@@ -1,0 +1,157 @@
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    /* flex: 1 0 1rem; */
+}
+.login-image{
+    height: 100vh;
+    width: 50vw;
+}
+
+.login-form{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: auto;
+}
+.login-form p{
+    margin: 0px;
+}
+.login-form h1{
+    margin: 0px 0px 12px 0px;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+label{
+    color: #4A5568;
+}
+input{
+    padding: 15px;
+    margin: 11px 0px;
+    color: black;
+    cursor: pointer;
+    
+}
+.email-details input{
+    width: 350px;
+    height: 50px;
+    border-style: none;
+    border-bottom: 2px solid black;
+}
+.error-msg-email{
+    display: none;
+    color: red;
+} 
+.reqd-msg-email{
+    display: none;
+}
+.pwd-details input{
+    width: 350px;
+    height: 50px;
+    border-style: none;
+    border-bottom: 2px solid black;
+}
+.error-msg-pwd{
+    display: none;
+    color: red;
+}
+.reqd-msg-pwd{
+    display: none;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox{
+    border: solid 2px black;
+    border-radius: 50%;
+}
+.features a{
+    text-decoration: none;
+    text-decoration-color: #2C5282;
+    padding-top: 10px;
+}
+.successfull{
+    display: none;
+}
+button{
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px 2px rgba(160, 204, 131, 0.8);
+    width: 350px;
+    height: 50px;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+#login-now{
+    margin-top: 27px;
+    margin-bottom: 15px;
+    background-color: #04C45C;
+}
+.google-logo{
+    margin-top: 10px;
+    width: 17px;
+    height: 17px;
+}
+#google-login{
+    background-color: #2D3748;
+    
+}
+
+#sign-up a{
+    color: #2B6CB0;
+    text-decoration: none;
+}
+@media screen and (min-device-width: 200px) and (max-device-width: 425px) {
+    .container{
+        flex-direction: column;
+    }
+    .login-image{
+        height: 60vh;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+    .email-details input{
+        width: 280px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .pwd-details input{
+        width: 280px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    button{
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        width: 280px;
+        height: 50px;
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+    }
+
+}
+
+/* @media only screen and (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    /* For Tablet mobile phones: */
+    .container{
+        flex-direction: column;
+    }
+    .login-image{
+        height: 70vh;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+}
