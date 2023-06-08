@@ -1,0 +1,5 @@
+1. Required Email & Required Password when fields are left blank
+2. Only border bottom for input 
+3. Shadow to the Login buttons
+
+		
